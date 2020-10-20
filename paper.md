@@ -1,5 +1,5 @@
 
-# Summary
+# APGG Meeting Mittwoch 21.10.2020 mit Herrn Staudacher
 
 The forces on stars, galaxies, and dark matter under external gravitational
 fields lead to the dynamical evolution of structures in the universe. The orbits
