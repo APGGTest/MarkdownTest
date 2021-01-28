@@ -61,6 +61,16 @@ There are some options to avoid the tragedy of the commons:
 
 **Archiver**: The Archiver Class represents a “Log”-Class. It has 2 subclasses. The Simplearchiver, which will write the status of the current generation (number of cooperators, defectors) as well as the LODArchiver, which will print the whole Line of Descent (best organism and his ancestors to a file at the end of each experiment. 
 
+**Mutator**: The mutator is responsible for mutating a random number of organisms out of the selection. The chance for the organisms to mutate is set by the mutationRate parameter. If a random value between 0 and 1 exceeds the mutationRate, one of the genomes of the organism will be randomly reassigned. Besides the normal (default) mutator, there is a threshold mutator, which will reassign the genome a new value within a specific range of the current value.
+
+**PayOffCalculator**: The payoff calculator is the core calculation class of the apgg framework.
+ It’s used to calculate the punishment cost and the punishment fine the payoff per group is based on the previously assigned factions (cooperator, defector, …) 
+
+The payoff calculation is a two step process. In the first step, the base costs, fines and payoff are calculated. The second step calculates the individual payoff based on the organism's decision. Depending on his decision, the organism has to pay a punishment cost or a fine out of his individual payoff.There are payoff calculators for different scenarios: Asymmetric Payoff calculator - a calculator, which calculates the payoff based on a spatial tier list. Everyone transfers his individual payoff into a group pool. After that, everyone gets his individual payoff out of this pool based on his rank in the group [hyänen paper].
+
+ The it’sNotReallyAGroupLevelPayoffCalculator [Ref zum Staudacher und Hintze Paper] is a calculator where everyone transfers only a part of his payoff into a group pool. After everyone has paid into this pool, the pool will be splitted by the number of group members and the value will be added to the individual payoff.
+
+
 ## Outlook
 Since APGG is written in a modular fashion, adding to and expanding on the existing code base is easy to do, and therefore allows anyone who would want to conduct experiments to write their specific use cases into APGG. Such additions could include ______. These additions could then be added to the official github repository via pull requests. APGG will also remain under further development for future experiments by Professor Dr. Staudacher and Professor Dr. Hintze, which will also be committed to the repository. 
 With the architecture that was designed to be easy to use, run, implement and expand, APGG should allow a multitude of possible users an easy passageway into computed public goods games, no matter their level understanding of programming and computational processes. 
