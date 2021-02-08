@@ -81,7 +81,7 @@ The payoff calculation is a two step process. In the first step, the base costs,
 
 ## Workflow
 
-![UML](img/workflow.png)
+![UML](img/work.png)
 *Temp flow chart*
 
 APGG was designed to be an easy to use framework for public goods games experiments. Because of that, the workflow was designed to be straight forward, and not just for computer scientists. To set up and configure an experiment or a set of them, all the user has to do is edit a csv file in the spreadsheet software of their choice or use the shipped python generator to create a batch (umschreiben) and then start the executable. 
