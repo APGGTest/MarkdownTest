@@ -100,7 +100,8 @@ These exeriemnts show that APGG works super well!!
 
 | Result1       | Result 2           | Result 3  |
 | ------------- |:-------------:| -----:|
-|  ![UML](img/result1.png){ width=33% } *Temp graph*      |  ![UML](img/result2.png){ width=33% } *Temp graph* |  ![UML](img/result3.png){ width=33% } *Temp graph* |
+|  ![UML](img/result1.png){ width=33% }  |  ![UML](img/result2.png){ width=33% } |  ![UML](img/result3.png){ width=33% }  |
+| *Temp graph* | *Temp graph* | *Temp graph* |
 
 Great graphs, so good.
 
