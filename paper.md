@@ -51,7 +51,7 @@ There are some options to avoid the tragedy of the commons:
 | defect      | defector      |   immoralist |
 
 ![UML](img/nash.png){ width=75% }  
-*Temp math
+*Temp math*
 
 
 ## Statement of need
