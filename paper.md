@@ -91,14 +91,16 @@ Internally, APGG starts by initializing the grid, with its population and all th
 
 These exeriemnts show that APGG works super well!!
 
- ![UML](img/result1.png)
-*Temp graph*
 
- ![UML](img/result2.png)
-*Temp graph*
 
- ![UML](img/result3.png)
-*Temp graph*
+
+
+
+
+
+| Result1       | Result 2           | Result 3  |
+| ------------- |:-------------:| -----:|
+|  ![UML](img/result1.png) *Temp graph*      |  ![UML](img/result2.png) *Temp graph* |  ![UML](img/result3.png) *Temp graph* |
 
 Great graphs, so good.
 
