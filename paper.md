@@ -58,7 +58,7 @@ This literature show it well.
 
 ## Code overview
 
-![UML](img/uml.png){width:75%}
+![UML](img/uml.png){ width:75% }
 *Temp UML Diagram*
 
 **World**: Encapsulates a single experiment. The World Class is divided into 4 methods, init, tick(plays the game), evolve and fini The main loop (tick and evolve) is being run within the world class and controls the entire game, by calling all the relevant classes and methods. All other classes are being initialized within the world class. World has no subclasses and is used for every experiment. 
@@ -81,7 +81,7 @@ The payoff calculation is a two step process. In the first step, the base costs,
 
 ## Workflow
 
-![UML](img/work.png){width:50%}
+![UML](img/work.png){ width:50% }
 *Temp flow chart*
 
 APGG was designed to be an easy to use framework for public goods games experiments. Because of that, the workflow was designed to be straight forward, and not just for computer scientists. To set up and configure an experiment or a set of them, all the user has to do is edit a csv file in the spreadsheet software of their choice or use the shipped python generator to create a batch (umschreiben) and then start the executable. 
