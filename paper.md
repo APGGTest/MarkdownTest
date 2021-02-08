@@ -50,7 +50,16 @@ There are some options to avoid the tragedy of the commons:
 | Cooperate      | cooperator | moralist |
 | defect      | defector      |   immoralist |
 
+## Statement of need
+
+APGG is needed because it is great and fast and fast and great!
+No other framwork exists yet. 
+This literature show it well.
+
 ## Code overview
+
+![UML](img/uml.png)
+*Temp UML Diagram*
 
 **World**: Encapsulates a single experiment. The World Class is divided into 4 methods, init, tick(plays the game), evolve and fini The main loop (tick and evolve) is being run within the world class and controls the entire game, by calling all the relevant classes and methods. All other classes are being initialized within the world class. World has no subclasses and is used for every experiment. 
 
@@ -70,6 +79,28 @@ The payoff calculation is a two step process. In the first step, the base costs,
 
  The it’sNotReallyAGroupLevelPayoffCalculator [Ref zum Staudacher und Hintze Paper] is a calculator where everyone transfers only a part of his payoff into a group pool. After everyone has paid into this pool, the pool will be splitted by the number of group members and the value will be added to the individual payoff.
 
+## Workflow
+
+![UML](img/workflow.png)
+*Temp flow chart*
+
+APGG was designed to be an easy to use framework for public goods games experiments. Because of that, the workflow was designed to be straight forward, and not just for computer scientists. To set up and configure an experiment or a set of them, all the user has to do is edit a csv file in the spreadsheet software of their choice or use the shipped python generator to create a batch (umschreiben) and then start the executable. 
+Internally, APGG starts by initializing the grid, with its population and all the genomes belonging to them. From there on out it enters the main loop, where it first generates the groups in which the games are being played, which is also the next step. After the games have concluded, the payoffs for each organism will be calculated. These payoff values are then used to make the selection of surviving versus dying on the population. Once the selection was created, the grid will be repopulated, filling in the holes left behind by the dead organisms. Then mutation is applied to the newly generated organisms. After that the loop starts over again.
+
+## Proof of Concept
+
+These exeriemnts show that APGG works super well!!
+
+ ![UML](img/result1.png)
+*Temp graph*
+
+ ![UML](img/result2.png)
+*Temp graph*
+
+ ![UML](img/result3.png)
+*Temp graph*
+
+Great graphs, so good.
 
 ## Outlook
 Since APGG is written in a modular fashion, adding to and expanding on the existing code base is easy to do, and therefore allows anyone who would want to conduct experiments to write their specific use cases into APGG. Such additions could include ______. These additions could then be added to the official github repository via pull requests. APGG will also remain under further development for future experiments by Professor Dr. Staudacher and Professor Dr. Hintze, which will also be committed to the repository. 
